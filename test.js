@@ -1,37 +1,15 @@
-function isIsogram(str){
-  str = str.toLowerCase();
-  let str1 = '';
-  let result;
-for(let i = 0;i<=str.length;i++){
-  if(str1.includes(str[i]) == true){
-    result = false;
-    console.log('yes');
-    break;
-  } else {
-    result = true;
-    console.log('no');
-
-  }
-  str1 += str[i];
-
-  console.log(str1);
+function explode(s) {
+s = s.split('')
+// console.log(s);
+let newstr = '';
+// console.log(newstr);
+for (let i = 0; i < s.length; i++) {
+  newstr += s[i].repeat(s[i])
+  //  console.log(r);
+   
+  //  console.log(newstr);
 }
-return result
+  return newstr;
 }
-
-
-function isIsogram(str){
-  let result;
-
-function rfr(a,b){
-  // if(a == b){
-  //   return false;
-  // } else { return true}
-  return a == b? result = false : result = true;
-}
-str.replace(/a-z/gi, rfr(a,z));
-return result
-}
-console.log(isIsogram('eerte'));
-
+console.log(explode('369'));
 //   node test.js
