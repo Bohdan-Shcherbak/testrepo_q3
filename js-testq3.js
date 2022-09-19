@@ -24,8 +24,8 @@ let billion = 1e9;  // 1 миллиард, буквально: 1 и 9 нулей
 let ms = 1e-6; // шесть нулей, слева от 1
 // alert( 0xff );  255
 // alert( 0xFF ); 255 (то же самое, регистр не имеет значения)
-let a = 0b11111111; // бинарная форма записи числа 255
-let b = 0o377; // восьмеричная форма записи числа 255
+let u = 0b11111111; // бинарная форма записи числа 255
+let k = 0o377; // восьмеричная форма записи числа 255
 
 typeof Infinity === 'number';
 
@@ -51,5 +51,27 @@ const SECOND = 1000;
 // isEmpty() — «пустой ли?»
 // hasErrors() — «есть ли ошибки?»
 
+const getGreetingMessage = (name, message = 'Hello') => {console.log(b);}
 
-let i = 0; while (i <= 3) {console.log(i); i++;}
+// Плюс + существует в двух формах: бинарный и унарный
+// Унарный, то есть применённый к одному значению, плюс + ничего не делает с числами. Но если операнд не число, унарный плюс преобразует его в число.
+
+// console.log({}=={}); false
+// console.log(true-'hello'); NuN
+// console.log(typeof typeof (function(){})());string
+// console.log(typeof alert); undefined
+// console.log(typeof 1n);bigint
+// console.log(null==undefined);  true
+// console.log(0 || 1 && 2 || 3); 2
+// let v = (!!'0'); console.log(v);
+
+// console.log(1.15 + 2.30); none of them
+// console.log(22 - '2'); 20
+// console.log('80' + 71.2); при отнимании строки, идет отнимание, а при прибавлении в строку
+
+// console.log(0 && '' || []);
+
+// console.log(true+'hello');
+
+// node js-testq3.js
+
