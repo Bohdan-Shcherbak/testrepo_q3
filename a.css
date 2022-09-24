@@ -61,3 +61,4 @@ position: relative;
     /* background-color: var(--my-var, --my-background, pink);  */
     /* "--my-background, pink" будет воспринят как значение в случае, если --my-var не определена */
   /* } */
+

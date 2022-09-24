@@ -75,3 +75,98 @@ const getGreetingMessage = (name, message = 'Hello') => {console.log(b);}
 
 // node js-testq3.js
 
+
+// function Product(name, price) {
+//     this.name = name;
+//     this.price = price;
+  
+//     if (price < 0) {
+//       throw RangeError('Нельзя создать продукт ' +
+//                         this.name + ' с отрицательной ценой');
+//     }
+//   }
+  
+//   function Food(name, price) {
+//     Product.call(this, name, price);
+//     this.category = 'еда';
+//   }
+  
+//   Food.prototype = Object.create(Product.prototype);
+  
+//   function Toy(name, price) {
+//     Product.call(this, name, price);
+//     this.category = 'игрушка';
+//   }
+  
+//   Toy.prototype = Object.create(Product.prototype);
+  
+//   var cheese = new Food('фета', 5);
+//   var fun = new Toy('робот', 40);
+
+"use strict"
+const details = {
+    sms: 'Hello',
+}
+function getSms() {
+    return this.sms;
+}
+// console.log(getSms.call(details));
+// let f = function(a,b) { return a+b }
+// let f = new Function("a", "b", "return a+b")
+
+
+function foo(a,b){
+    return a*b
+}
+
+const bar = foo.bind(null,2)
+bar(2)
+
+// for (var i = 0; i < 3; i++) {
+// setTimeout(function(){
+//     console.log(i);
+// },1000)
+// } 333
+
+// for (let i = 0; i < 3; i++) {
+// setTimeout(function(){
+//     console.log(i);
+// },1000)
+// } 0 1 2
+const details2 = {
+    // name:'John'
+}
+
+function getmes(mes){
+    return `${mes} ${this.name}`;
+}
+// console.log(getmes.apply(details2, ['Hello']));
+
+
+
+// "use strict"
+// function printttMessage(){
+//     console.log(this);
+    
+// }
+
+// console.log(printttMessage());
+
+// number
+function rfr () {
+return {bar:1}
+}
+// console.log(typeof rfr().bar);
+var name = 'Joghn'
+
+function gg (){
+    console.log(name);
+}
+
+setTimeout(() => {
+    let name = 'Peter';
+    gg();
+},1000)
+
+// console.log(setTimeout);
+
